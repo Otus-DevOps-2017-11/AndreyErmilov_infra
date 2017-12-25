@@ -12,6 +12,7 @@ gcloud compute instances create reddit-app \
   --machine-type=g1-small \
   --tags puma-server \
   --restart-on-failure \
+  --zone=europe-west3-a \
   --metadata-from-file startup-script=startup.sh
 ```
 
