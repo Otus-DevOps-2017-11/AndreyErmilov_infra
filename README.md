@@ -1,5 +1,21 @@
 # AndreyErmilov_infra
 
+## Homework 6
+
+Cоздание инстанса с запуском стартап скрипта
+
+```
+gcloud compute instances create reddit-app \
+  --boot-disk-size=10GB \
+  --image-family ubuntu-1604-lts \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure \
+  --zone=europe-west3-a \
+  --metadata-from-file startup-script=startup.sh
+```
+
 ## Homework 5
 
 ### Основное задание
