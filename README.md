@@ -1,5 +1,18 @@
 # AndreyErmilov_infra
 
+## Homework 7
+
+Credentials вашего пользователя
+
+```
+gcloud auth application-default login
+```
+
+Переименуйте `variables.json.example` в `variables.json` и поменяйте данные.
+
+Запуск packer:
+```packer build -var-file=variables.json ubuntu16.json```
+
 ## Homework 6
 
 Cоздание инстанса с запуском стартап скрипта
