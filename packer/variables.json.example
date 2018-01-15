@@ -1,5 +1,7 @@
 {
+  "variables": {
     "project_id": "infra-189020",
     "machine_type": null,
     "source_image_family": "ubuntu-1604-lts"
+    }
 }
