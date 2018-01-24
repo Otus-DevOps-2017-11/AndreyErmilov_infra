@@ -1,6 +1,9 @@
 # Mac
 .DS_Store
 
+# Packer files
+variables.json
+
 # Terraform
 *.tfstate
 *.tfstate.*.backup
