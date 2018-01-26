@@ -23,3 +23,13 @@ variable zone {
 variable "private_key_path" {
   description = "Path to the private key used for ssh access"
 }
+
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default = "reddit-base-app"
+}
+
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default = "reddit-base-db"
+}
