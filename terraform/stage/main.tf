@@ -1,3 +1,10 @@
+terraform {
+  backend "gcs" {
+    bucket = "reddit-app"
+    prefix = "stage"
+  }
+}
+
 provider "google" {
   version = "1.4.0"
   project = "${var.project}"

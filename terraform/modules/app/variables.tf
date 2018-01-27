@@ -4,10 +4,8 @@ variable public_key_path {
 
 variable zone {
   description = "Disk image"
-  default     = "europe-west1-b"
 }
 
 variable app_disk_image {
   description = "Disk image for reddit app"
-  default = "reddit-base-app"
 }
