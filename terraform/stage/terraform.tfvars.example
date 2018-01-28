@@ -1,0 +1,5 @@
+project             = "infra-193207"
+public_key_path     = "~/.ssh/andreye.pub"
+private_key_path    = "~/.ssh/andreye"
+app_disk_image      = "reddit-base-app"
+db_disk_image       = "reddit-base-db"
