@@ -1,5 +1,14 @@
 # AndreyErmilov_infra
 
+## Homework 10
+
+### Запуск приложения
+Для работы используется `Ansible`
+
+- установите `ansible` глобально `sudo pip install -r requirements.txt`
+- переименуйте `inventory.yml.example` в `inventory.yml` и добавьте свои ip адрес
+- протестируйте доступ к серверам по ssh с помощью `ansible all -m ping `
+
 ## Homework 9
 
 ### Запуск приложения
