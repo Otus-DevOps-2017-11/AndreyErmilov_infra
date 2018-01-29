@@ -1,0 +1,32 @@
+{
+  "variables": {
+    "project_id": null,
+    "source_image_family": null,
+    "machine_type": "f1-micro",
+    "image_description": "Ubuntu Image with MondoDB"
+  },
+  "builders": [
+    {
+      "type": "googlecompute",
+      "project_id": "{{user `project_id`}}",
+      "image_name": "reddit-base-{{timestamp}}",
+      "image_family": "reddit-base-db",
+      "source_image_family": "{{user `source_image_family`}}",
+      "zone": "europe-west1-b",
+      "ssh_username": "andreye",
+      "machine_type": "{{user `machine_type`}}",
+      "disk_size": "10",
+      "disk_type": "pd-standard",
+      "image_description": "disk 10gb, standart",
+      "network": "default",
+      "tags": "puma-server"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "scripts/install_mongodb.sh",
+      "execute_command": "sudo {{.Path}}"
+    }
+  ]
+}
