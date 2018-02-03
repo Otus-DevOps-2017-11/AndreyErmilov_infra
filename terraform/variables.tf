@@ -9,5 +9,5 @@ variable "region" {
 
 variable "buckets" {
   description = "List of GCS buckets"
-  default     = ["infra-bucket-2", "infra-bucket-1"]
+  default     = ["reddit-app"]
 }
