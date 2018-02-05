@@ -1,5 +1,15 @@
 # AndreyErmilov_infra
 
+## Homework 11
+
+### Запуск приложения
+Для запуска приложения `Reddit App` нужно:
+
+- установите `ansible` глобально `sudo pip install -r requirements.txt`
+- переименуйте `inventory.yml.example` в `inventory.yml` и добавьте ip адреса app и db хостов
+- поменяйте в файле `ansible/group_vars/all` переменную `app_user` на имя ssh пользователя
+- запустите `Ansible` из корня проекта с помощью команды `ansible-playbook ansible/site.yml`
+ 
 ## Homework 10
 
 ### Запуск приложения
