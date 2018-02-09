@@ -1,5 +1,17 @@
 # AndreyErmilov_infra
 
+## Homework 12
+
+### Общее описание
+Приложение разворачивается в одном из двух окружений – `stage` и `prod`
+Каждому окружению соответствует своя папка в `ansible/environments`
+
+## Разворачивание приложения в среде
+
+- замените ip адреса `ansible_host` и `ansible_host` в `inventory.yml` файлах окружений
+- замените имя пользователя в файле `group_vars/all` для обоих окружений на актуальное имя ssh пользователя
+- запустите приложение из папки `ansible` командой `ansible-playbook playbooks/site.yml`
+
 ## Homework 11
 
 ### Запуск приложения
@@ -9,7 +21,7 @@
 - переименуйте `inventory.yml.example` в `inventory.yml` и добавьте ip адреса app и db хостов
 - поменяйте в файле `ansible/group_vars/all` переменную `app_user` на имя ssh пользователя
 - запустите `Ansible` из корня проекта с помощью команды `ansible-playbook ansible/site.yml`
- 
+
 ## Homework 10
 
 ### Запуск приложения
