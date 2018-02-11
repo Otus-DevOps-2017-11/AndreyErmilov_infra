@@ -17,3 +17,6 @@ jdauphant.nginx
 
 # Idea files
 .idea
+
+# Editor
+.editorconfig
