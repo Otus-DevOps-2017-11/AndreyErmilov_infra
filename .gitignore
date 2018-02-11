@@ -13,6 +13,10 @@ variables.json
 
 # Ansible services files
 *.retry
+jdauphant.nginx
 
 # Idea files
 .idea
+
+# Editor
+.editorconfig
