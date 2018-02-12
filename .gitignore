@@ -20,3 +20,10 @@ jdauphant.nginx
 
 # Editor
 .editorconfig
+
+# Vagrant & molecule
+.vagrant/
+*.log
+*.pyc
+.molecule
+.cache
