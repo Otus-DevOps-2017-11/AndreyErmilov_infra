@@ -7,10 +7,8 @@ name = "pypi"
 
 [packages]
 
-ansible = "*"
-molecule = "*"
-testinfra = "*"
-python-vagrant = "*"
+backports-abc = "*"
+setuptools = "*"
 
 
 [dev-packages]

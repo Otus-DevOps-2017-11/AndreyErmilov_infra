@@ -1,5 +1,9 @@
 # AndreyErmilov_infra
 
+
+ pipenv install --two --dev --skip-lock
+
+
 ## Homework 12
 
 ### Общее описание
